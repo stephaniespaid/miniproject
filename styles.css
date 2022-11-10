@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.div1 {
+    float: left;
+    height: 500px;
+    width: 15%;
+    border: 2px solid rgb(255, 255, 255);
+    border-width: 4px 2px;
+    background: #b37575;
+}
+
+.div2 {
+    float: left;
+    height: 500px;
+    width: 15%;
+    border: 2px solid rgb(255, 255, 255);
+    border-width: 4px 2px;
+    background: #70566D;
+}
+
+.div3 {
+    width: 20%;
+    float: left;
+    height: 500px;
+    width: 45%;
+    border: 2px solid rgb(255, 255, 255);
+    border-width: 4px 2px;
+    background: #78b375;
+}
+
+.div4 {
+    width: 20%;
+    float: left;
+    height: 500px;
+    width: 25%;
+    border: 2px solid rgb(255, 255, 255);
+    border-width: 4px 2px;
+    background: #ae75b3;
+}
+.header {
+    border: 20px solid black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*, header, footer, .div1, .div2, .div3, .div4 {
+    font-size: 2rem;
+    font-family: 'Orbitron', serif;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+header, footer {
+    font-family: 'Orbitron', serif;
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    height: 300px;
+    width: 100%;  <--- this is because one element, the header is at the very top, and the footer is at the very bottom
+    border: 20px solid black;
+    background: #A33B20
+}
+
+
+
+/************************** For Tablets *************************/
+@media screen and (min-width: 581px) and (max-width: 868px){
+
+    header, footer {
+        background: #20a37e
+    }
+    .div1 {
+        width: 100%;
+        height: 150px;
+        /* border-width: 10px; */
+        background: #b37575;
+    }
+
+     .div2 {
+            width: 100%;
+            height: 150px;
+            border-width:1px;
+            background: #70566d;
+     }
+
+     .div3 {
+                width: 50%;
+                height: 500px;
+                /* border-width:50%; */
+                background: #78b375;
+     }
+    .div4 {
+            width: 50%;
+            height: 500px;
+            /* border-width:50%; */
+            background: #ae75b3;            
+        
+    
+
+}
+}
+
+/************************** For Mobile ***************************/
+
+@media screen and (max-width: 580px){
+
+    header, footer {
+        background: #7c20a3
+    }
+    .div1 {
+        width: 100%;
+        height: 300px;
+        /* border-width: 10px; */
+        background: #b37575;
+    }
+
+     .div2 {
+            width: 100%;
+            height: 300px;
+            border-width:1px;
+            background: #70566d;
+     }
+
+     .div3 {
+                width: 100%;
+                height: 300px;
+                /* border-width:50%; */
+                background: #78b375;
+     }
+    .div4 {
+            width: 100%;
+            height: 300px;
+            /* border-width:50%; */
+            background: #ae75b3;         
+
+}
+}
+
+/* .div1 {
+    float: left;
+    height: 500px;
+    width: 20%;  <--- the math begins.... 
+    border: 2px solid black;
+    background: #44A1A0; */
+
+/* @media query sizing:
+580px: Mobile devices
+581px — 868px: iPads, Tablets */
